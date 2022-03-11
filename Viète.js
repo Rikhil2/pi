@@ -6,4 +6,5 @@ for (let i=0; i<10; i++) {
   factor1 = factor2;
 }
 //the loop yields 2/pi;
-createDiv((1/py)/2);
+py = ((1/py)/2)
+createDiv(py);
