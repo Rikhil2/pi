@@ -2,9 +2,21 @@
 <html>
 <body>
 
-<h1>My First Heading</h1>
+<p>Pi approximation:</p>
+<script>
+et pie = 1;
+for (let i=0; i<10; i++) {
+  let den = i*2 + 3;
+  let frac = (1/den);
+  if (i%2 ==0)
+    pie -= frac;
+  else
+    pie += frac;
+}
+pie *= 4;
+createDiv(pie);
+</script>
 
-<p>My first paragraph.</p>
 
 </body>
 </html>
