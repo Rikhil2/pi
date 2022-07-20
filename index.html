@@ -4,6 +4,8 @@
 
 <h2>Pi</h2>
 <p>Liebniz:</p>
+  
+<p id="demo"></p>
 
 <script>
 let py = 1;
@@ -16,7 +18,7 @@ for (let i=0; i<100000; i++) {
   }
 }
 py *= 4;
-document.write(py);
+document.getElementById("demo").innerHTML = py;
 </script>
 
 
