@@ -8,12 +8,14 @@
 <script>
 let py = 1;
 for (let i=0; i<10; i++) {
-  let factor1 = 2**0.5;
-  let factor2 = (2+factor1)**0.5;
-  py *= (factor2/2);
-  factor1 = factor2;
+  let den = i * 2 + 3;
+  if ((i % 2) == 0) {
+    pi -= (1/den);
+  } else {
+    py += (1/den);
+  }
 }
-py = ((1/py)/2)
+py *= 4;
 document.write(py);
 </script>
 
