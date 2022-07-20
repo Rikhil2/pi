@@ -8,9 +8,9 @@
 <p id="approximation"></p>
 
 <script>
-let inerations = readInt("How many interations?");
+let time = parseInt(prompt("How many iterations? "));
 let py = 1;
-for (let i=0; i<interations; i++) {
+for (let i=0; i<time; i++) {
   let den = i * 2 + 3;
   if ((i % 2) == 0) {
     py -= (1/den);
@@ -19,7 +19,7 @@ for (let i=0; i<interations; i++) {
   }
 }
 py *= 4;
-document.getElementById("approximation").innerHTML = interations;
+document.getElementById("approximation").innerHTML = time;
 </script>
 
 
