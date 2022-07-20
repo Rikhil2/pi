@@ -28,8 +28,8 @@ document.getElementById("approximation").innerHTML = pie;
   
 <script>
 let time1 = parseInt(prompt("How many iterations? "));
-let py = 1;
-for (let i=0; i<10; i++) {
+let py = (2**0.5)/2;
+for (let i=0; i<time1; i++) {
   let factor1 = 2**0.5;
   let factor2 = (2+factor1)**0.5;
   py *= (factor2/2);
